@@ -1,0 +1,30 @@
+<script>
+	function button() {
+		document.querySelector("#submit").addEventListener("click", function(event){
+			let pw = document.querySelector("#password");
+			if(pw.value.length < 8) {
+				event.preventDefault();
+				let err = document.createElement("b");
+				err.innerHTML = "Password must be at least 8 characters";
+				err.setAttribute("style", "color:red");
+				const div = document.querySelector("#err");
+				while (div.firstChild) {
+					div.removeChild(div.firstChild);
+				}
+				div.appendChild(err);
+			}
+		});
+	}
+	document.addEventListener('DOMContentLoaded', button);
+</script>
+<h3>Register</h3>
+<div id="err">
+{{#if err}}
+	<b style="color:red">{{err}}</b>
+{{/if}}
+</div>
+<form method="POST" action="/register">
+	Username: <input name="username" type="text">
+	Password: <input id="password" name="password" type="password">	
+	<input id="submit" type="submit" value="Register">	
+</form>

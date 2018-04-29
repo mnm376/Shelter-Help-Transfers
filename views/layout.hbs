@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <title>ShelterHelp</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 style="color:white;">ShelterHelp</h1>
+
+      <h3 style="color:white;">Transfers</h3>
+    </div>
+    <div class="row">
+      <div class="column left" style="background-color:#008080;">
+        <a href="/">Home</a>
+        {{#if loggedIn}}
+          <a href="/animals/add">Add Animal</a> 
+          <a href="/myRequests">My Requests</a> 
+          <a href="/requestsReceived">Requests Received</a> 
+          <a href="/myAnimals">My Animals</a> 
+          <a href="/logout">Logout</a>
+        {{else}}
+          <a href="/login" >Login</a> 
+          <a href="/register">Register</a>
+        {{/if}}
+        <!-- <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <a href="/animals/add">Add Animal</a>
+        <a href="/">2</a>
+        <a href="/">3</a>
+        -->
+      </div>
+      <div class="column right" style="background-color:#bbb;">
+        {{{body}}}
+      </div>
+    </div>
+  </body>
+</html>

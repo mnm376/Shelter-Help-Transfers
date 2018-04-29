@@ -1,0 +1,28 @@
+<!--
+<table>
+  <tr>
+    <td class="header">Animal</td>
+    <td class="header">Description</td>
+  </tr>
+  <tr>
+      <td><a href="/animals/{{this.slug}}">{{name}}</a></td>
+      <td>{{description}}</td>
+  </tr>
+</table>
+-->
+<h1>Animals</h1>
+{{#each obj}}
+<div class="container">
+    <div class="flex-row row">
+        <div class="col-xs-6 col-sm-4 col-lg-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <img src = "https://cresentiuz.files.wordpress.com/2013/10/cat-10.png">
+                    <h4><a href="/animals/{{this.slug}}">{{name}}</a></h4>
+                    <p class="flex-text text-muted">{{description}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

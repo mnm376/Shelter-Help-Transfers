@@ -1,0 +1,87 @@
+.header {
+  background-color: Grey;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  display: block;
+  background-color: green;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p, a {
+  text-align: center;
+  display: block;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+form {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+table {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  border-collapse: collapse;
+  width: 40%;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+th, td {
+  padding-left: 2;
+  border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    background-color: green;
+}
+
+/* Taken from w3schools */
+.column {
+    float: left;
+    width: 80%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    width: 20%;
+}
+
+/* Bootstrap */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row .thumbnail,
+.flex-row .caption {
+  flex-direction: column;
+  display: flex;
+  flex: 1 0 auto;
+  height: auto;
+  position: relative;
+}
+.flex-text {
+  flex-grow: 1;
+}
+.flex-row img {
+  min-width: 0;
+  width: 100%;
+}

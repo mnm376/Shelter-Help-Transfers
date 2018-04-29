@@ -1,0 +1,10 @@
+<h2>My Tranfers</h2>
+
+<h3>Completed: {{transferred}}</h3>
+{{#each completedTransfers}}
+	<a href="/myRequests/{{this.requestID}}">{{this.message}}</a>
+{{/each}}
+<h3>Pending: {{pending}}</h3>
+{{#each pendingTransfers}}
+	<a href="/myRequests/{{this.requestID}}">{{this.message}}</a>	
+{{/each}}

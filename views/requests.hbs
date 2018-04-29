@@ -1,0 +1,10 @@
+<h2>Request </h2>
+<p> {{animal.name}}</p>
+{{#if loggedIn}}
+{{#if request.transferred}}
+	<p>Transfer State: Completed</p>
+{{else}}
+	<p >Transfer State: In Progress</p>
+{{/if}}
+<p>Details: {{request.message}}</p>
+{{else}}{{/if}}

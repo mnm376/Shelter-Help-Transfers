@@ -1,0 +1,15 @@
+{{#if loggedIn}}
+	<p>Animal: {{request.animal.name}}</p>
+	{{#if request.transferred}}
+		<p>Status: Completed</p>
+		<p>Message: {{request.message}}</p>
+	{{else}}
+		<p>Status: Pending</p>
+		<p>Message: {{request.message}}</p>
+		<form method="POST" action="/completeRequest/{{request.requestID}}">
+			<input name="transferred" value="false" type="radio" checked> In Progress
+			<input name="transferred" value="true" type="radio"> Completed
+			<input type="submit" value="Update Request">
+		</form>
+	{{/if}}
+{{/if}}

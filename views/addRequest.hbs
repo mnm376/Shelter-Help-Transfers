@@ -1,0 +1,7 @@
+<h3>Add Request </h3>
+<h4> Animal Requested: {{animals.name}} <br /> Animal Description: {{animals.description}}</h4>
+
+<form method="POST" action="/animals/{{animals.slug}}/addRequest">
+	<h4> Message: <input name="message" type="text"> </h4>
+<input type="submit" value="Add Request">
+</form>

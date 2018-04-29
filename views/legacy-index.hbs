@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td class="header">Animal</td>
+    <td class="header">Description</td>
+    <td class="header">Request</td>
+  </tr>
+  {{#each obj}}
+  <tr>
+      <td>{{name}}</td>
+      <td>{{description}}</td>
+      <td><input type="submit" name = {{animalID}} value="Request me!"/></td>
+  </tr>
+  {{/each}}
+</table>

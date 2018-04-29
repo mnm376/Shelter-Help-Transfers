@@ -1,0 +1,35 @@
+{
+  "name": "mnm376-final-project",
+  "version": "1.0.0",
+  "description": "ShelterHelp Transfers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-008-spring-2018/mnm376-final-project.git"
+  },
+  "author": "Moh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-008-spring-2018/mnm376-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-008-spring-2018/mnm376-final-project#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "d3": "^5.1.0",
+    "docker": "^1.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.13",
+    "mongoose-url-slugs": "^1.0.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "q": "^1.5.1",
+    "validate.js": "^0.12.0"
+  }
+}

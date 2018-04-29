@@ -1,0 +1,5 @@
+<bdo> <link rel="stylesheet" href="../css/base.css"></bdo>
+<h2>My Animals: {{totalAnimals}}</h2>
+{{#each Animals}}
+	<a href="/animals/{{this.slug}}">{{this.name}}</a>
+{{/each}}
