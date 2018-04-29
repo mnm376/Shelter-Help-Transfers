@@ -108,18 +108,15 @@ An Example Animal:
 
 ## Research Topics
 
-* (4 points) Perform client side form validation using a JavaScript library
+* Perform client side form validation using a JavaScript library
   -Plan on using passport.js because it's most popular on search engines
-* (5 points) d3.js
+* d3.js
     -use d3.js as the frontend framework;
     -probably use it for adding timestamps and showing a matrix chart for which organizations interact the most. this will be for admin of the application only to help increase shelter interaction with data from this chart 
     -it's a challenging library to learn/incorporate, so I've assigned it 5 points
-* (2 points) CSS Framework: Bootstrap
+* CSS Framework: Bootstrap
   -Bootstrap helps build responsive projects 
   -Again, very popular and will make the webpages pretty
-
-11 points total out of 8 required points 
-
 
 ## [Link to Initial Main Project File](app.js) 
 
